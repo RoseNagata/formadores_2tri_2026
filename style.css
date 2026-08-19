@@ -1,0 +1,258 @@
+/* ==========================================================================
+   ESTILOS GERAIS E VARIÁVEIS DE CORES
+   ========================================================================== */
+
+/* 
+   A paleta de cores foi escolhida para transmitir acolhimento, empatia e serenidade:
+   - Verde Menta/Suave (#3B7A57 e #D8EBB5): Crescimento, harmonia e esperança.
+   - Azul Acolhedor (#2B4C7E): Confiança e segurança.
+   - Bege Warm/Creme (#F7F9F6): Fundo suave para não cansar a vista.
+   - Grafite Escuro (#2C3E50): Para textos, garantindo excelente contraste e leitura.
+*/
+
+* {
+    /* Define que padding e border não aumentam o tamanho total dos elementos */
+    box-sizing: border-box;
+    /* Reseta margens e espaçamentos padrão de todos os elementos */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Fonte limpa e de fácil leitura para iniciantes e estudantes */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Fundo em tom creme bem suave para dar uma sensação acolhedora */
+    background-color: #f7f9f6;
+    /* Cor do texto principal em tom escuro para boa legibilidade */
+    color: #2c3e50;
+    /* Altura da linha para tornar a leitura dos parágrafos mais confortável */
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   CABEÇALHO (HEADER) E MENU DE NAVEGAÇÃO (NAV)
+   ========================================================================== */
+
+header {
+    /* Fundo verde suave acolhedor */
+    background-color: #3b7a57;
+    /* Cor do texto em branco */
+    color: #ffffff;
+    /* Espaçamento interno */
+    padding: 2rem 1rem 1rem 1rem;
+    /* Alinhamento centralizado dos textos do cabeçalho */
+    text-align: center;
+}
+
+/* Estilo do título principal (H1) */
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Subtítulo ou frase de efeito abaixo do H1 */
+header p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.95;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilização da barra de navegação */
+nav {
+    background-color: #2d5e43;
+    padding: 0.8rem;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Remove as bolinhas da lista do menu */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+/* Transforma os itens da lista em blocos lado a lado */
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* Estilização dos links do menu */
+nav a {
+    color: #ffffff;
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold;
+    font-size: 1rem;
+    /* Transição suave ao passar o mouse */
+    transition: color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre os links do menu */
+nav a:hover {
+    color: #d8ebb5; /* Verde claro brilhante para destaque */
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   CONTEÚDO PRINCIPAL (MAIN) E SEÇÕES (SECTION)
+   ========================================================================== */
+
+main {
+    /* Define a largura máxima do conteúdo para não esticar demais em telas grandes */
+    max-width: 900px;
+    /* Centraliza o bloco do conteúdo na página */
+    margin: 2rem auto;
+    /* Adiciona margem interna nas laterais */
+    padding: 0 1.5rem;
+}
+
+/* Títulos de nível 2 (H2) em todas as seções */
+section h2, aside h2 {
+    color: #2b4c7e; /* Azul confiável */
+    border-bottom: 3px solid #3b7a57; /* Linha decorativa verde abaixo do título */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+/* ==========================================================================
+   ARTIGOS DO BLOG (ARTICLE)
+   ========================================================================== */
+
+article {
+    /* Fundo branco nos cartões de artigos para destacar do fundo geral */
+    background-color: #ffffff;
+    /* Bordas arredondadas nos cartões */
+    border-radius: 10px;
+    /* Espaçamento interno dentro do cartão */
+    padding: 1.5rem;
+    /* Espaçamento entre os artigos */
+    margin-bottom: 2rem;
+    /* Sombra suave para dar sensação de elevação */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    /* Borda sutil lateral */
+    border-left: 5px solid #3b7a57;
+}
+
+/* Título de nível 3 (H3) dentro do artigo */
+article h3 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+}
+
+/* Identificação do autor da publicação */
+article .autor {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+/* Parágrafos dentro do artigo */
+article p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+/* Estilização da imagem do artigo */
+article img {
+    /* Garante que a imagem seja totalmente responsiva sem estourar o container */
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    /* Corta a imagem com qualidade mantendo a proporção */
+    object-fit: cover;
+    /* Cantos arredondados na imagem */
+    border-radius: 8px;
+    margin: 1rem 0;
+    /* Borda sutil na imagem */
+    border: 1px solid #e0e0e0;
+}
+
+/* Subtítulos de apoio (H4) e listas dentro do artigo */
+article h4 {
+    color: #3b7a57;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+article ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+article li {
+    margin-bottom: 0.4rem;
+}
+
+/* ==========================================================================
+   CARTÕES DE PROJETOS (DIV.CARD-PROJETO)
+   ========================================================================== */
+
+.card-projeto {
+    background-color: #eaf2ed; /* Fundo verde-claro suave */
+    border-left: 4px solid #2b4c7e;
+    padding: 1.2rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.card-projeto h3 {
+    color: #2b4c7e;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+
+/* ==========================================================================
+   BARRA LATERAL / SAIBA MAIS (ASIDE)
+   ========================================================================== */
+
+aside {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+aside ul {
+    list-style-type: square;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+aside li {
+    margin-bottom: 0.8rem;
+}
+
+/* Estilização dos links externos na seção Saiba Mais */
+aside a {
+    color: #2b4c7e;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+aside a:hover {
+    color: #3b7a57;
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   RODAPÉ (FOOTER)
+   ========================================================================== */
+
+footer {
+    background-color: #2c3e50; /* Grafite escuro para fechar a página */
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    font-size: 0.95rem;
+}
+
+footer p {
+    margin-bottom: 0.4rem;
+}
