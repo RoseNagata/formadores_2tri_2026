@@ -1,49 +1,116 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog: Empatia e Cooperação</title>
-  <!-- Vinculação com o arquivo de estilos do Canvas -->
-  <link rel="stylesheet" href="estilo.css">
-  <!-- Fonte moderna para melhorar a estética geral -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Define a codificação de caracteres UTF-8 (suporte para acentos e caracteres especiais) -->
+    <meta charset="UTF-8">
+    
+    <!-- Garante a responsividade em dispositivos móveis e diferentes tamanhos de tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título exibido na aba do navegador -->
+    <title>ConectaEscola | Empatia e Cooperação no Ambiente Escolar</title>
+
+    <!-- Vincula o arquivo externo de estilos CSS à página HTML -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Caixa principal do blog (Box Model aplicada via estilo.css) -->
-  <div class="container-blog">
-    
-    <!-- Título Principal -->
-    <h1>Empatia e Cooperação</h1>
-    
-    <!-- Subtítulo / Frase de Apoio -->
-    <p class="tagline">Transformando o mundo através de pequenas ações coletivas</p>
+    <!-- HEADER: Cabeçalho principal do site -->
+    <header>
+        <div class="cabecalho-conteudo">
+            <h1>Blog ConectaEscola</h1>
+            <p>Cultivando a empatia, o respeito e a cooperação no dia a dia da aprendizagem.</p>
+        </div>
 
-    <!-- Área da Imagem com link altamente resiliente e Fallback de segurança -->
-    <div class="container-imagem">
-      <img 
-        src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80&w=800" 
-        alt="Mãos unidas simbolizando cooperação e união"
-        onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1516880711640-ef7db81be3e1?auto=format&fit=crop&q=80&w=800';"
-      >
-    </div>
+        <!-- NAV: Bloco reservado para os links do menu de navegação do site -->
+        <nav>
+            <ul>
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#saiba-mais">Saiba Mais</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Texto de Conteúdo -->
-    <p class="conteudo-texto">
-      A empatia nos permite enxergar o mundo através dos olhos do outro, enquanto a cooperação transforma esse sentimento em ação coletiva. Juntas, essas duas forças são a base para construirmos comunidades mais unidas, acolhedoras e resilientes. Quando colaboramos, dividimos o peso das dificuldades e multiplicamos o alcance das nossas conquistas.
-    </p>
+    <!-- MAIN: Conteúdo principal e exclusivo desta página do blog -->
+    <main>
 
-    <!-- Alinhamento do Botão de Ação -->
-    <div class="container-botao">
-      <button type="button" class="btn-acao" onclick="alert('Obrigado por apoiar essa causa!')">
-        Fazer a Minha Parte
-      </button>
-    </div>
+        <!-- SECTION: Seção reservada para as postagens/artigos do blog -->
+        <section id="artigos">
+            <h2>Artigos em Destaque</h2>
 
-  </div>
+            <!-- ARTICLE: Bloco que representa uma postagem independente de blog -->
+            <article>
+                <header>
+                    <h3>O Poder da Empatia em Sala de Aula</h3>
+                    <p class="autor">Publicado por <em>Prof. Carla M.</em></p>
+                </header>
+
+                <p>Empatia é a capacidade de colocar-se no lugar do outro. Na escola, praticar a empatia ajuda a criar um ambiente seguro, livre de bullying e acolhedor para todas as crianças.</p>
+
+                <!-- IMG: Imagem ilustrativa representando a cooperação estudantil -->
+                <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80&w=800" alt="Estudantes e professora unidos em círculo no ambiente escolar">
+
+                <h4>Como praticar no dia a dia:</h4>
+                <ul>
+                    <li>Escutar o colega sem interromper.</li>
+                    <li>Oferecer ajuda antes mesmo de ser pedido.</li>
+                    <li>Compreender as diferenças de cada colega de classe.</li>
+                </ul>
+            </article>
+
+            <!-- ARTICLE: Segundo artigo do blog -->
+            <article>
+                <header>
+                    <h3>Trabalho em Equipe: Aprender Junto é Melhor</h3>
+                    <p class="autor">Publicado por <em>Coordenação Pedagógica</em></p>
+                </header>
+
+                <p>A cooperação escolar mostra aos alunos que os resultados em grupo costumam superar o trabalho individual. Quando compartilhamos ideias, todos aprendem mais rápido.</p>
+            </article>
+
+        </section>
+
+        <!-- SECTION: Seção dedicada aos projetos práticos desenvolvidos na escola -->
+        <section id="projetos">
+            <h2>Nossos Projetos de Cooperação</h2>
+
+            <!-- DIV: Contêiner para organizar os cartões dos projetos do grupo -->
+            <div class="card-projeto">
+                <h3>Projeto Correio Amigo</h3>
+                <p>Os alunos trocam bilhetes anônimos de incentivo semanalmente para reforçar a autoimagem dos colegas.</p>
+            </div>
+
+            <div class="card-projeto">
+                <h3>Monitoria de Estudos entre Pares</h3>
+                <p>Estudantes do mesmo ano ajudam colegas que estão enfrentando dificuldades em disciplinas como matemática e português.</p>
+            </div>
+        </section>
+
+        <!-- ASIDE: Bloco com conteúdo secundário/complementar (barra lateral do blog) -->
+        <aside id="saiba-mais">
+            <h2>Saiba Mais e Recursos Úteis</h2>
+            <p>Confira materiais externos para aprofundar seu conhecimento sobre desenvolvimento socioemocional:</p>
+
+            <ul>
+                <li>
+                    <a href="https://www.novaescola.org.br" target="_blank">Revista Nova Escola: Práticas Pedagógicas</a>
+                </li>
+                <li>
+                    <a href="https://porvir.org" target="_blank">Portal Porvir: Inovação na Educação e Empatia</a>
+                </li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- FOOTER: Rodapé da página com direitos autorais e contatos do projeto -->
+    <footer>
+        <p>&copy; 2026 Blog ConectaEscola. Todos os direitos reservados.</p>
+        <p>Desenvolvido para incentivar um ambiente escolar mais cooperativo.</p>
+    </footer>
 
 </body>
 </html>
